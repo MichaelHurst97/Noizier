@@ -8,6 +8,9 @@ Noizier is an Audio Plugin created to generate noise sounds quick and easily wit
 
 How to install
 ======
+[Download the latest Version here](https://github.com/MichaelHurst97/Noizier/releases/tag/Release)
+
+
 **Windows:** Use the installer or copy Noizier.vst3 to *C:\Program Files\Common Files\VST3*
 
 **Mac:** Copy Noizier.vst3 to *Library/Audio/Plug-ins/VST3*
