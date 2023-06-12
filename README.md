@@ -2,7 +2,7 @@
 # Noizier
 ## A Simple Noise Generator
 
-![Noizier Screenshot](https://github.com/MichaelHurst97/Noizier/blob/main/Assets/Noizier_Screenshot.png?raw=true)
+![alt text](https://github.com/MichaelHurst97/Noizier/blob/main/Assets/Noizier_Screenshot.png "Noizier Screenshot")
 Noizier is mainly created to generate noise sounds quick and easily with a selected range of modulators to shape the sound.
 
 
