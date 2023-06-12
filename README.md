@@ -1,16 +1,17 @@
 
 # Noizier
 ## A Simple Noise Generator
+Noizier is an Audio Plugin created to generate noise sounds quick and easily with a selected range of modulators to shape the sound.
 
 ![Noizier Screenshot](https://github.com/MichaelHurst97/Noizier/blob/main/Assets/Noizier_Screenshot.PNG "Noizier Screenshot")
-
-Noizier is mainly created to generate noise sounds quick and easily with a selected range of modulators to shape the sound.
 
 
 How to install
 ======
 **Windows:** Use the installer or copy Noizier.vst3 to *C:\Program Files\Common Files\VST3*
+
 **Mac:** Copy Noizier.vst3 to *Library/Audio/Plug-ins/VST3*
+
 **Linux:** Copy Noizier.lv2 folder to your LV2 Plugins Folder
 
 
@@ -25,8 +26,11 @@ Currently there are 3 Noise types:
 + Comb-ish Noise (Sounds a bit like applying a comb filter, hence the name)
 
 **ADSR Panel:** Change the envelope of the Notes
+
 **LFO Button:** Turn on LFO Amplitude Modulation and change the Frequency with the dial
+
 **HPF and LPF dials:** Can be used to apply a highpass and lowpass filter (fixed 36db per octave slope each)
+
 **Keytrack button:** Enables a fake pitch mode. Here, a lowpass filter is applied to the signal depending on the note you are playing
 
 
