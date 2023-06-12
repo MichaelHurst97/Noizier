@@ -34,7 +34,7 @@ Currently there are 3 Noise types:
 
 **HPF and LPF dials:** Can be used to apply a highpass and lowpass filter (fixed 36db per octave slope each)
 
-**Keytrack button:** Enables a fake pitch mode. Here, a lowpass filter is applied to the signal depending on the note you are playing
+**Keytrack button:** Enables a fake pitch mode. Here, a lowpass filter is applied to the signal depending on the note you are playing. Ranges from C0 to C7
 
 
 Sources
