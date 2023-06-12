@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="InmPx0" name="Noizier" projectType="audioplug" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" displaySplashScreen="0" jucerFormatVersion="1"
+              pluginCharacteristicsValue="pluginIsSynth,pluginWantsMidiIn"
+              version="1.0.0" pluginName="Noizier" pluginDesc="A Simple Noise Generator"
+              pluginManufacturer="Michael Hurst" pluginFormats="buildAU,buildLV2,buildStandalone,buildVST3">
+  <MAINGROUP id="nQqw2D" name="Noizier">
+    <GROUP id="{A43F8F06-95E0-C24F-EF43-01F80F587183}" name="Source">
+      <FILE id="fyYwv7" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="EjrzVO" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="osU9hZ" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="ab0TdA" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+      <GROUP id="{DDF0101F-FD22-E898-B8C2-2DDB53D32CBD}" name="modells">
+        <FILE id="gc6S3i" name="ModellADSR.cpp" compile="1" resource="0" file="Source/ModellADSR.cpp"/>
+        <FILE id="I6NQLl" name="ModellADSR.h" compile="0" resource="0" file="Source/ModellADSR.h"/>
+        <FILE id="IZyYxs" name="ModellFilter.cpp" compile="1" resource="0"
+              file="Source/ModellFilter.cpp"/>
+        <FILE id="MNgAfX" name="ModellFilter.h" compile="0" resource="0" file="Source/ModellFilter.h"/>
+        <FILE id="xkhtnH" name="ModellFilterNotes.cpp" compile="1" resource="0"
+              file="Source/ModellFilterNotes.cpp"/>
+        <FILE id="M48Rpo" name="ModellFilterNotes.h" compile="0" resource="0"
+              file="Source/ModellFilterNotes.h"/>
+        <FILE id="k3K5OZ" name="ModellGain.cpp" compile="1" resource="0" file="Source/ModellGain.cpp"/>
+        <FILE id="x013nP" name="ModellGain.h" compile="0" resource="0" file="Source/ModellGain.h"/>
+        <FILE id="fBExF5" name="ModellNoiseOsc.cpp" compile="1" resource="0"
+              file="Source/ModellNoiseOsc.cpp"/>
+        <FILE id="rL0jQV" name="ModellNoiseOsc.h" compile="0" resource="0"
+              file="Source/ModellNoiseOsc.h"/>
+        <FILE id="Qm8dyk" name="ModellPanner.cpp" compile="1" resource="0"
+              file="Source/ModellPanner.cpp"/>
+        <FILE id="y242V9" name="ModellPanner.h" compile="0" resource="0" file="Source/ModellPanner.h"/>
+      </GROUP>
+      <GROUP id="{0DDA0286-56FB-4759-D53C-139CF5E1E2C0}" name="ui">
+        <FILE id="OYW6U0" name="UIComponentAnimatedBackground.cpp" compile="1"
+              resource="0" file="Source/UIComponentAnimatedBackground.cpp"/>
+        <FILE id="XOMikx" name="UIComponentAnimatedBackground.h" compile="0"
+              resource="0" file="Source/UIComponentAnimatedBackground.h"/>
+        <FILE id="TC5vAd" name="UIComponentPaintHelper.cpp" compile="1" resource="0"
+              file="Source/UIComponentPaintHelper.cpp"/>
+        <FILE id="mn9yVF" name="UIComponentPaintHelper.h" compile="0" resource="0"
+              file="Source/UIComponentPaintHelper.h"/>
+        <FILE id="S0RcxQ" name="UIComponentSlider.cpp" compile="1" resource="0"
+              file="Source/UIComponentSlider.cpp"/>
+        <FILE id="y4vntM" name="UIComponentSlider.h" compile="0" resource="0"
+              file="Source/UIComponentSlider.h"/>
+        <FILE id="aV8c8s" name="UIControlsADSR.cpp" compile="1" resource="0"
+              file="Source/UIControlsADSR.cpp"/>
+        <FILE id="o2euC6" name="UIControlsADSR.h" compile="0" resource="0"
+              file="Source/UIControlsADSR.h"/>
+        <FILE id="Kc9V6a" name="UIControlsFilter.cpp" compile="1" resource="0"
+              file="Source/UIControlsFilter.cpp"/>
+        <FILE id="BO7unA" name="UIControlsFilter.h" compile="0" resource="0"
+              file="Source/UIControlsFilter.h"/>
+        <FILE id="taAVgo" name="UIControlsGain.cpp" compile="1" resource="0"
+              file="Source/UIControlsGain.cpp"/>
+        <FILE id="NBmaMJ" name="UIControlsGain.h" compile="0" resource="0"
+              file="Source/UIControlsGain.h"/>
+        <FILE id="ZcKVeY" name="UIControlsLFO.cpp" compile="1" resource="0"
+              file="Source/UIControlsLFO.cpp"/>
+        <FILE id="D2iWFu" name="UIControlsLFO.h" compile="0" resource="0" file="Source/UIControlsLFO.h"/>
+        <FILE id="vNqFCP" name="UIControlsPlugin.cpp" compile="1" resource="0"
+              file="Source/UIControlsPlugin.cpp"/>
+        <FILE id="eOLNFH" name="UIControlsPlugin.h" compile="0" resource="0"
+              file="Source/UIControlsPlugin.h"/>
+        <FILE id="mPmDrt" name="UICustomLookAndFeel.h" compile="0" resource="0"
+              file="Source/UICustomLookAndFeel.h"/>
+      </GROUP>
+      <GROUP id="{93819B57-D841-1D93-E705-FA12B40929A1}" name="synth">
+        <FILE id="Qd6nvW" name="NoiseSynthVoice.cpp" compile="1" resource="0"
+              file="Source/NoiseSynthVoice.cpp"/>
+        <FILE id="ExKegR" name="NoiseSynthVoice.h" compile="0" resource="0"
+              file="Source/NoiseSynthVoice.h"/>
+        <FILE id="VrjcmR" name="NoiseSynthSound.h" compile="0" resource="0"
+              file="Source/NoiseSynthSound.h"/>
+      </GROUP>
+      <GROUP id="{D6B69157-B8A3-A577-B401-9A51AEEFD8A9}" name="data">
+        <FILE id="lDZ79s" name="RobotoBlackItalic.ttf" compile="0" resource="1"
+              file="Assets/RobotoBlackItalic.ttf"/>
+      </GROUP>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <VS2022 targetFolder="Builds/VisualStudio2022">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="Noizier"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="Noizier"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="../../../../JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2022>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+</JUCERPROJECT>
