@@ -39,7 +39,7 @@ Currently there are 3 Noise types:
 
 Why use Noizier?
 ======
-I wrote this Plugin because of my own needs and wishes as a music producer. I often work with Noise, so programming a quick and easy to use Plugin to get this task done seemed like something cool and something others might want to use as well.
+I wrote this Plugin because of my own needs and wishes as a music producer. I often work with Noise, so programming a quick and easy to use Plugin to get this task done seemed like something cool and something others might want to use aswell.
 
 
 Wanna Contribute?
