@@ -1,7 +1,7 @@
 
 # Noizier
 ## A Simple Noise Generator
-Noizier is an Audio Plugin created to generate noise sounds quick and easily with a selected range of modulators to shape the sound.
+Noizier is an Audio Plugin created to generate noise sounds quick and easily with a selected range of modulators to shape the sound. No need to load up and configure a full Synthesiser just for it's Noise.
 
 ![Noizier Screenshot](https://github.com/MichaelHurst97/Noizier/blob/main/Assets/Noizier_Screenshot.PNG "Noizier Screenshot")
 
