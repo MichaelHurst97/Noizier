@@ -37,10 +37,20 @@ Currently there are 3 Noise types:
 **Keytrack button:** Enables a fake pitch mode. Here, a lowpass filter is applied to the signal depending on the note you are playing. Ranges from C0 to C7
 
 
+Wanna Contribute?
+======
+Of course! Modify the Plugin in anyway you like, just be sure that its GPL 3.
+If you want to contribute Lambda Functions for weird Noises, feel free I'd love that! Write me if you have any Questions, Ideas or Input. 
+
+
+Build
+======
+Built using JUCE 7.0.5, the Projucer and Visual Studio 2022.
+
+
 Sources
 ======
 The code for this project has code adaptions based on the JUCE Documentation and Tutorials (https://docs.juce.com/master/index.html) and Joshua Hodge aka The Audio Programmer (https://github.com/TheAudioProgrammer/)
-
 
 
 License
