@@ -37,6 +37,11 @@ Currently there are 3 Noise types:
 **Keytrack button:** Enables a fake pitch mode. Here, a lowpass filter is applied to the signal depending on the note you are playing. Ranges from C0 to C7
 
 
+Why use Noizier?
+======
+I wrote this Plugin because of my own needs and wishes as a music producer. I often work with Noise, so programming a quick and easy to use Plugin to get this task done seemed like something cool and something others might want to use as well.
+
+
 Wanna Contribute?
 ======
 Of course! Modify the Plugin in anyway you like, just be sure that its GPL 3.
