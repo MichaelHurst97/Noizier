@@ -13,8 +13,6 @@ How to install
 
 **Windows:** Use the installer or copy Noizier.vst3 to *C:\Program Files\Common Files\VST3*
 
-**Mac:** Copy Noizier.vst3 to *Library/Audio/Plug-ins/VST3*
-
 **Linux:** Copy Noizier.lv2 folder to your LV2 Plugins Folder
 
 
