@@ -30,7 +30,7 @@ NoisePluginAudioProcessor::NoisePluginAudioProcessor()
                        ), 
     // AudioProcessorValueTreeState constructor, manages entire state of the plugin
     apvts(*this, nullptr, juce::Identifier("apvts"), createParameterLayout()),
-    // Init filter object
+    // Init filter object (Constructor used to create multiple filters in ModellFilter)
     filter()
 
 #endif
@@ -115,7 +115,6 @@ void NoisePluginAudioProcessor::prepareToPlay (double sampleRate, int samplesPer
     message << "Preparing to play audio...\n";
     message << " samplesPerBlock = " << samplesPerBlock << "\n";
     message << " sampleRate = " << sampleRate << "\n";
-    message << " numVoices = " << noiseSynth.getNumVoices();
     juce::Logger::getCurrentLogger()->writeToLog(message);
 
     auto numOutputChannels = getTotalNumOutputChannels();
@@ -131,7 +130,7 @@ void NoisePluginAudioProcessor::prepareToPlay (double sampleRate, int samplesPer
         // We need to cast the noiseSynth internal SynthesiserVoice to our own NoiseSynthVoice, so check if thats successful
         if (auto voice = dynamic_cast<NoiseSynthVoice*>(noiseSynth.getVoice(i)))
         {
-            // Assign NoiseSynthVoice Pointer to Synthesiser
+            // Apply playback initialization values to voice
             voice->prepareToPlay(sampleRate, samplesPerBlock, numOutputChannels);
         }
     }

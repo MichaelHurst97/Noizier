@@ -39,8 +39,8 @@ void UIComponentSlider::resized()
     slider.setBounds(0, 0, sliderBoundsWidth, sliderBoundsHeight);
 }
 
-// Gets called from parent that uses this class. 
-// Resizing the parent doesnt resize the slider, so this workaround exists
+// Gets called from parent that uses this class. Executed in parents resized function.
+// Resizing the parent doesnt resize the slider automatically, so this workaround exists
 void UIComponentSlider::updateBounds(int newSliderBoundsWidth, int newSliderBoundsHeight)
 {
     sliderBoundsWidth = newSliderBoundsWidth;

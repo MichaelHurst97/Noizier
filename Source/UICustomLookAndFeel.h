@@ -71,7 +71,7 @@ public:
         return getCustomFont().getTypefacePtr();
     }
 
-    // Style Rotary Sliders
+    // Style Rotary Sliders https://docs.juce.com/master/tutorial_look_and_feel_customisation.html
     void drawRotarySlider(juce::Graphics& g, int x, int y, int width, int height, float sliderPos,
         const float rotaryStartAngle, const float rotaryEndAngle, juce::Slider& slider) override
     {

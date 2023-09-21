@@ -15,9 +15,9 @@
 
 #include <JuceHeader.h>
 
-// Describes sound available for synthesizer to use, synthvoice plays back these sounds.
+// Describes sound available for synthesizer to use, synthvoice does the actual playback.
 // This is only a header file, because we just need to implement pure virtual functions
-// for midi notes and midi channel
+// for using midi note input and define a midi channel
 class NoiseSynthSound : public juce::SynthesiserSound
 {
 public:

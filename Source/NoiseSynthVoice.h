@@ -19,8 +19,9 @@
 #include "ModellNoiseOsc.h"
 #include "ModellFilter.h"
 
-// Generates the synthesiser sound.
-// Each instance of synthesizer voice plays back a synthesizer noise, because synthesizer can be polyphonic
+// Is responsible for the synth's sound generation.
+// (Each instance of synthesizer voice plays back a synthesizer noise, because synthesiser can be polyphonic)
+// We only use one voice; Noizier is monophonic
 class NoiseSynthVoice : public juce::SynthesiserVoice
 {
 public:
@@ -36,7 +37,7 @@ public:
         const int noiseType, const float lfoFrequencyInput, const bool lfoSwitchInput);
 
 private:
-    ModellNoiseOsc dspOsc;
+    ModellNoiseOsc noiseOsc;
 
     ModellADSR adsr;
 

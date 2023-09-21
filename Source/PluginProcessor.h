@@ -17,9 +17,9 @@
 #include "NoiseSynthVoice.h"
 #include "NoiseSynthSound.h"
 #include "ModellFilter.h"
-#include "ModellGain.h"
-#include "ModellPanner.h"
 #include "ModellFilterNotes.h"
+#include "ModellPanner.h"
+#include "ModellGain.h"
 
 // Plugin Processor that acts as the starting point.
 // This is the "Brains" of the plugin that does the actual audio processing / playback

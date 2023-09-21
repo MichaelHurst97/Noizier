@@ -24,7 +24,7 @@ void NoiseSynthVoice::startNote(int midiNoteNumber, float /*velocity*/, juce::Sy
 {
     // Get frequency to oscillate to.
     // Shouldn't matter sound wise, because all frequencies are distributed equally in white noise
-    dspOsc.setFrequency((float)juce::MidiMessage::getMidiNoteInHertz (midiNoteNumber));
+    noiseOsc.setFrequency((float)juce::MidiMessage::getMidiNoteInHertz (midiNoteNumber));
 
     // Apply envelope to note playing, meaning starting the attack phase of adsr envelope
     adsr.noteOn();
@@ -62,7 +62,7 @@ void NoiseSynthVoice::prepareToPlay(double sampleRate, int samplesPerBlock, int 
     spec.numChannels = numOutputChannels;
 
     // Pass specifications like samplerate for processing to the dsp modules prepare() function
-    dspOsc.prepare(spec);
+    noiseOsc.prepare(spec);
 
     // ADSR setup
     adsr.setSampleRate(sampleRate);
@@ -86,7 +86,7 @@ void NoiseSynthVoice::renderNextBlock(juce::AudioBuffer<float>& outputBuffer, in
 
     // Process oscillator via buffer -> play the noise. 
     // Replaces contents of dsps AudioBlock / AudioBuffer
-    dspOsc.process(juce::dsp::ProcessContextReplacing<float>(dspAudioBlock));
+    noiseOsc.process(juce::dsp::ProcessContextReplacing<float>(dspAudioBlock));
 
     // Apply adsr envelope to the AudioBuffer.
     // As dsps AudioBlock is an alias for outputBuffer, we can call outputBuffer here
@@ -119,9 +119,9 @@ void NoiseSynthVoice::renderNextBlock(juce::AudioBuffer<float>& outputBuffer, in
 void NoiseSynthVoice::updateParameters(const float attack, const float decay, const float sustain, const float release, 
     const int noiseType, const float lfoFrequencyInput, const bool lfoSwitchInput)
 {
-    // Update ADSR Modell data
+    // Update ADSR Modell data and noise type
     adsr.updateADSR(attack, decay, sustain, release);
-    dspOsc.setNoiseType(noiseType);
+    noiseOsc.setNoiseType(noiseType);
 
     // Update lfo frequency and check if the lfo should be applied
     lfoFrequency = lfoFrequencyInput * 10;
